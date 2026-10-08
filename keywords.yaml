@@ -1,0 +1,8 @@
+# Palabras clave por categoría. Coincidencia insensible a mayúsculas y por palabra completa.
+broken: ["stopped working", "doesn't work", "not working", "broke", "broken", "bug", "glitch", "crash", "error"]
+pricing: ["too expensive", "price increase", "raised the price", "overpriced", "hidden fee", "charged me", "refund", "billing"]
+support: ["no response", "no support", "never replied", "never responded", "ignored", "terrible support", "slow support"]
+missing_feature: ["wish it had", "would be great if", "missing", "lacks", "no option to", "doesn't support", "can't customize"]
+abandoned: ["no updates", "abandoned", "outdated", "not maintained"]
+switching: ["switched to", "moved to", "uninstalled", "alternative", "better app"]
+performance: ["slow", "slows down", "page speed", "load time"]

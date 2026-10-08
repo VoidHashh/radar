@@ -1,0 +1,21 @@
+rank,app_id,name,url,review_count,rating_shown,rating_computed,pct_1_2,total_12m,negatives_12m,low_sample,method,total,demand,pain,recent_pain,momentum,recurrence,buildability,neglect,volume,competition
+1,email-templates,Orderly Emails ‑ Templates App,https://apps.shopify.com/email-templates,770,3.8,4.3935,14.29,280,92,0,estimated,0.5949,0.7216,0.1429,0.3232,0.0113,0.8618,1.0,0.8842,0.7942,0.2183
+2,search-and-discovery,Shopify Search & Discovery,https://apps.shopify.com/search-and-discovery,507,2.7,3.6824,27.42,71,49,0,estimated,0.5539,0.6763,0.2742,0.6263,0.3303,0.4882,0.6,0.9543,0.6855,0.3522
+3,afterpay-messaging,Afterpay On‑Site Messaging,https://apps.shopify.com/afterpay-messaging,54,3.0,2.4074,64.81,8,4,1,exact,0.5493,0.4331,0.6481,0.3185,0.0,0.5625,1.0,0.8073,0.282,0.7161
+4,facebook,Facebook & Instagram,https://apps.shopify.com/facebook,5716,3.8,3.7302,27.06,1651,300,0,estimated,0.5323,0.9393,0.2706,0.1817,1.0,0.2304,0.2,0.9913,1.0,0.3068
+5,sku-generator-1,SKUGen SKU & Barcode Generator,https://apps.shopify.com/sku-generator-1,63,4.4,4.3492,17.46,11,2,1,exact,0.517,0.4498,0.1746,0.1778,1.0,0.5341,1.0,0.6638,0.1925,0.5248
+6,whatsapp-chat-button,SL: WhatsApp Chat + Marketing,https://apps.shopify.com/whatsapp-chat-button,353,3.5,3.6771,32.01,16,9,0,estimated,0.5163,0.6369,0.3201,0.4128,0.0,0.5723,1.0,0.739,0.4035,0.3416
+7,easy-block-customer-ip-country,Country Blocker Fraud Securify,https://apps.shopify.com/easy-block-customer-ip-country,103,4.6,4.466,11.65,92,8,0,exact,0.5163,0.5032,0.1165,0.0954,0.3395,0.6397,1.0,0.6279,0.385,0.6016
+8,product-discount,Bold Discounts ‑ Flash Sales,https://apps.shopify.com/product-discount,504,4.0,4.2202,16.87,6,5,0,estimated,0.5148,0.6756,0.1687,0.4209,0.679,0.525,1.0,0.8201,0.314,0.149
+9,powr-image-slider,POWR Image Slider & Carousel,https://apps.shopify.com/powr-image-slider,104,4.1,4.2692,13.46,10,2,1,exact,0.5107,0.5043,0.1346,0.1867,1.0,0.5729,1.0,0.6918,0.1925,0.4079
+10,shopify-subscriptions,Shopify Subscriptions,https://apps.shopify.com/shopify-subscriptions,842,3.7,3.6057,27.08,560,135,0,estimated,0.509,0.7313,0.2708,0.2399,0.291,0.246,0.6,0.9814,0.8608,0.3432
+11,shopify-order-printer,Shopify Order Printer,https://apps.shopify.com/shopify-order-printer,378,3.5,2.8016,50.0,83,15,0,estimated,0.501,0.6444,0.5,0.1799,0.0728,0.3698,1.0,0.8921,0.4858,0.3154
+12,accessibility-enabler-increase-sales-with-disability-friendly-site,Accessibility Enabler AW,https://apps.shopify.com/accessibility-enabler-increase-sales-with-disability-friendly-site,74,4.4,4.5676,10.81,8,1,1,exact,0.5009,0.4673,0.1081,0.1519,1.0,0.5341,1.0,0.7547,0.1215,0.4835
+13,tawk-to,tawk.to Live Chat,https://apps.shopify.com/tawk-to,89,3.6,4.0,23.6,3,2,1,exact,0.5,0.4873,0.236,0.2872,1.0,0.4895,1.0,0.7751,0.1925,0.2697
+14,banner-slider,SmartBN: Banner Slider ,https://apps.shopify.com/banner-slider,52,3.2,4.3269,15.38,1,1,1,exact,0.4989,0.429,0.1538,0.2485,1.0,0.5341,1.0,0.7547,0.1215,0.4079
+15,ldt-gift-wrap,"LDT: Gift Wrap, Gift Message",https://apps.shopify.com/ldt-gift-wrap,75,3.9,4.52,10.67,7,3,1,exact,0.4954,0.4688,0.1067,0.2785,0.0,0.5729,1.0,0.7924,0.2429,0.6492
+16,multi-feed-for-google-shopping-xml, Casa Google Shopping Feed,https://apps.shopify.com/multi-feed-for-google-shopping-xml,229,4.5,4.4934,12.23,7,4,1,exact,0.4933,0.59,0.1223,0.3373,0.3395,0.6339,1.0,0.6644,0.282,0.3068
+17,shopify-bundles,Shopify Bundles,https://apps.shopify.com/shopify-bundles,570,2.9,3.3228,35.26,53,35,0,estimated,0.492,0.689,0.3526,0.5831,0.0955,0.4219,0.6,0.9178,0.6279,0.1705
+18,google-tag-manager-installer,Easy Tag ‑ GTM & Data Layer,https://apps.shopify.com/google-tag-manager-installer,77,3.8,4.5974,10.39,3,2,1,exact,0.4911,0.4716,0.1039,0.2872,1.0,0.5729,1.0,0.7751,0.1925,0.2055
+19,product-fees,Upcharge Surcharge Fees Tariff,https://apps.shopify.com/product-fees,192,4.7,4.4896,11.46,82,4,1,exact,0.487,0.5708,0.1146,0.0623,0.3395,0.5288,1.0,0.593,0.282,0.6058
+20,yoast-seo,Yoast SEO ‑ Store optimization,https://apps.shopify.com/yoast-seo,177,4.3,4.3277,14.69,41,7,0,exact,0.4862,0.562,0.1469,0.1713,1.0,0.5547,1.0,0.4883,0.3644,0.1494

@@ -1,0 +1,32 @@
+User-agent: ChatGPT-User
+Disallow: /internal/
+Disallow: /services/
+Disallow: /*?*shpxid=*
+Disallow: /*?*auth=*
+
+User-agent: Claude-User
+Disallow: /internal/
+Disallow: /services/
+Disallow: /*?*shpxid=*
+Disallow: /*?*auth=*
+
+User-agent: Google-Agent
+Disallow: /internal/
+Disallow: /services/
+Disallow: /*?*shpxid=*
+Disallow: /*?*auth=*
+
+User-agent: Perplexity-User
+Disallow: /internal/
+Disallow: /services/
+Disallow: /*?*shpxid=*
+Disallow: /*?*auth=*
+
+User-agent: *
+Disallow: /internal/
+Disallow: /services/
+Disallow: *q=*
+Disallow: /*?*shpxid=*
+Disallow: /*?*auth=*
+
+Sitemap: https://apps.shopify.com/sitemap.xml

@@ -1,0 +1,21 @@
+rank,app_id,name,url,review_count,rating_shown,rating_computed,pct_1_2,total_12m,negatives_12m,low_sample,incident,method,total,demand,pain,recent_pain,momentum,recurrence,buildability,neglect,volume,competition
+1,product-discount,Bold Discounts ‑ Flash Sales,https://apps.shopify.com/product-discount,504,4.0,4.2202,16.87,6,5,0,0,estimated,0.5522,0.6756,0.1687,0.4209,0.679,0.525,1.0,0.8201,0.314,0.3985
+2,email-templates,Orderly Emails ‑ Templates App,https://apps.shopify.com/email-templates,770,3.8,4.3935,14.29,280,92,0,1,estimated,0.5465,0.7216,0.1429,0.3232,0.0034,0.2586,1.0,0.8842,0.7942,0.4619
+3,whatsapp-chat-button,SL: WhatsApp Chat + Marketing,https://apps.shopify.com/whatsapp-chat-button,353,3.5,3.6771,32.01,16,9,0,0,estimated,0.5432,0.6369,0.3201,0.4128,0.0,0.5723,1.0,0.739,0.4035,0.5212
+4,sku-generator-1,SKUGen SKU & Barcode Generator,https://apps.shopify.com/sku-generator-1,63,4.4,4.3492,17.46,11,2,1,0,exact,0.5428,0.4498,0.1746,0.1778,1.0,0.5341,1.0,0.6638,0.1925,0.6974
+5,google-tag-manager-installer,Easy Tag ‑ GTM & Data Layer,https://apps.shopify.com/google-tag-manager-installer,77,3.8,4.5974,10.39,3,2,1,0,exact,0.533,0.4716,0.1039,0.2872,1.0,0.5729,1.0,0.7751,0.1925,0.4848
+6,easy-block-customer-ip-country,Country Blocker Fraud Securify,https://apps.shopify.com/easy-block-customer-ip-country,103,4.6,4.466,11.65,92,8,0,0,exact,0.5289,0.5032,0.1165,0.0954,0.3395,0.6397,1.0,0.6279,0.385,0.6858
+7,tawk-to,tawk.to Live Chat,https://apps.shopify.com/tawk-to,89,3.6,4.0,23.6,3,2,1,0,exact,0.5232,0.4873,0.236,0.2872,1.0,0.4895,1.0,0.7751,0.1925,0.4246
+8,powr-image-slider,POWR Image Slider & Carousel,https://apps.shopify.com/powr-image-slider,104,4.1,4.2692,13.46,10,2,1,0,exact,0.5227,0.5043,0.1346,0.1867,1.0,0.5729,1.0,0.6918,0.1925,0.4879
+9,accessibility-enabler-increase-sales-with-disability-friendly-site,Accessibility Enabler AW,https://apps.shopify.com/accessibility-enabler-increase-sales-with-disability-friendly-site,74,4.4,4.5676,10.81,8,1,1,0,exact,0.5112,0.4673,0.1081,0.1519,1.0,0.5341,1.0,0.7547,0.1215,0.5518
+10,banner-slider,SmartBN: Banner Slider ,https://apps.shopify.com/banner-slider,52,3.2,4.3269,15.38,1,1,1,0,exact,0.5109,0.429,0.1538,0.2485,1.0,0.5341,1.0,0.7547,0.1215,0.4879
+11,yoast-seo,Yoast SEO ‑ Store optimization,https://apps.shopify.com/yoast-seo,177,4.3,4.3277,14.69,41,7,0,0,exact,0.506,0.562,0.1469,0.1713,1.0,0.5547,1.0,0.4883,0.3644,0.2813
+12,complianz-gdpr-cookie-consent,Complianz Consent,https://apps.shopify.com/complianz-gdpr-cookie-consent,277,4.3,4.5523,10.47,26,3,1,0,exact,0.5056,0.6106,0.1047,0.1315,0.5093,0.6057,1.0,0.6386,0.2429,0.5249
+13,geolocation-redirect,MOD: GeoLocation Redirect,https://apps.shopify.com/geolocation-redirect,50,4.0,4.38,14.0,3,1,1,0,exact,0.5048,0.4247,0.14,0.2103,1.0,0.5341,1.0,0.6638,0.1215,0.5257
+14,multi-feed-for-google-shopping-xml, Casa Google Shopping Feed,https://apps.shopify.com/multi-feed-for-google-shopping-xml,229,4.5,4.4934,12.23,7,4,1,0,exact,0.5029,0.59,0.1223,0.3373,0.3395,0.6339,1.0,0.6644,0.282,0.371
+15,product-fees,Upcharge Surcharge Fees Tariff,https://apps.shopify.com/product-fees,192,4.7,4.4896,11.46,82,4,1,0,exact,0.5018,0.5708,0.1146,0.0623,0.3395,0.5288,1.0,0.593,0.282,0.7044
+16,mcafee-secure,TrustedSite ‑ Trust Badges,https://apps.shopify.com/mcafee-secure,268,4.6,4.3619,13.81,95,6,0,0,exact,0.5011,0.607,0.1381,0.0737,0.5093,0.491,1.0,0.6439,0.341,0.5292
+17,ldt-gift-wrap,"LDT: Gift Wrap, Gift Message",https://apps.shopify.com/ldt-gift-wrap,75,3.9,4.52,10.67,7,3,1,0,exact,0.4989,0.4688,0.1067,0.2785,0.0,0.5729,1.0,0.7924,0.2429,0.6724
+18,kudobuzz-testimonials,Kudobuzz Product Reviews & UGC,https://apps.shopify.com/kudobuzz-testimonials,156,4.2,4.4808,10.26,14,4,1,0,exact,0.498,0.5483,0.1026,0.2389,1.0,0.5288,1.0,0.5215,0.282,0.302
+19,automatic-discount-rules,ADU: Automatic Discounts,https://apps.shopify.com/automatic-discount-rules,197,4.3,4.335,13.2,5,1,1,0,exact,0.4978,0.5736,0.132,0.1823,1.0,0.5341,1.0,0.6638,0.1215,0.3985
+20,alidrop-aliexpress-dropship-1,Alibaba & AliExpress Dropship,https://apps.shopify.com/alidrop-aliexpress-dropship-1,170,3.4,4.4,14.12,22,13,0,0,exact,0.4949,0.5576,0.1412,0.4604,0.4527,0.6467,0.6,0.4479,0.4624,0.4742

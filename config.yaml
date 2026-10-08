@@ -1,0 +1,108 @@
+# Configuración del radar. Las rutas son relativas a este fichero.
+db_path: data/radar.sqlite
+cache_dir: cache
+log_path: data/radar.log
+
+http:
+  user_agent: "RadarResearchBot/0.1 (internal market research; ~1 req/2-3s; non-commercial)"
+  accept_language: "en-US,en;q=0.9"
+  min_interval_s: 2.0          # ritmo base: 1 petición cada 2-3 s
+  max_interval_s: 3.0
+  timeout_s: 30
+  max_retries: 5               # 429/5xx/errores de red
+  backoff_base_s: 5            # 5, 10, 20, 40, 80 s
+  cache_max_age_hours: 144     # una página cacheada vale 6 días
+  challenge_pause_s: 900       # Cloudflare: pausa de 15 min y reintento
+  max_consecutive_blocks: 3    # tras 3 bloqueos seguidos: guardar estado y parar
+
+store:
+  base_url: "https://apps.shopify.com"
+  sitemap_apps: "https://apps.shopify.com/sitemap_apps_en.xml"
+  sitemap_categories: "https://apps.shopify.com/sitemap_categories_en.xml"
+  max_category_pages: 300      # tope de seguridad por categoría
+
+meta:
+  min_listing_reviews: 50      # solo se pide la ficha si el listado muestra >= N reseñas
+
+preselect:
+  min_review_count: 50
+  min_pct_negative: 10         # 100 * (n_1 + n_2) / review_count
+  max_rating_computed: 4.2
+
+window:
+  since_days: 365
+  exact_max_reviews: 300       # <= 300: todas las reseñas; > 300: negativas + estimación
+  max_pages: 30                # máximo de páginas de negativas por app
+
+handoff:                       # pasos 6-8b: los hace Claude Code, sin API (D10)
+  dir: data/llm
+  classify_batch_size: 150     # reseñas por lote
+  model_label: "claude-code"
+
+replicables:                   # paso 8b (D12)
+  min_reviews: 500
+  min_paid_usd_month: 10
+  max_candidates: 60           # cuántas evalúa Claude Code, por demanda descendente
+  exclude_developers: ["Shopify"]
+  weights:                     # originales ×0,85 + competition 0,15
+    demand: 0.34
+    price: 0.255
+    buildability: 0.255
+    competition: 0.15
+
+report:
+  top_n: 20
+  replicables_top_n: 20
+  examples_per_cluster: 3
+
+scoring:                       # D13-D16, D19
+  bayes_m: 10                  # (x·n + p0·m) / (n + m) en recent_pain, recurrence y neglect
+  low_sample_negatives: 5      # "muestra baja" si negatives_12m < 5 (solo se marca)
+  competition:                 # D19: presión = strong·norm(log10(1 + nº apps fuertes)) + leader_share·cuota del líder
+    strong_min_reviews: 100    # app "fuerte" en su categoría
+    strong: 0.6
+    leader_share: 0.4          # reseñas del líder / reseñas totales de la categoría
+
+platforms:                     # D17: fuera del ranking de oportunidades; se muestran aparte como contexto
+  developers: ["Shopify", "Meta", "Facebook", "Instagram", "Google", "TikTok", "Pinterest", "Amazon", "PayPal",
+               "Afterpay", "Clearpay", "Klarna", "Affirm", "Sezzle", "Zip", "Mercado Pago", "Microsoft", "X",
+               "Snap", "Etsy", "eBay", "Walmart", "Apple", "Stripe", "Square"]
+
+incident:                      # D18: "incidente puntual"
+  share: 0.6                   # >= 60 % de las negativas de 12 meses...
+  window_days: 30              # ...dentro de una ventana de 30 días...
+  same_cluster: true           # ...y del mismo grupo de quejas
+  min_negatives: 5             # no se evalúa con menos negativas (con 1 negativa siempre sería "incidente")
+  # D21: sin factor; las apps con incidente salen del ranking y van a "contexto"
+
+needs:                         # D20: necesidades no cubiertas (material: apps preseleccionadas, 12 meses)
+  min_reviews: 5
+  min_apps: 2
+  top_n: 15
+  examples: 3
+
+needs_wide:                    # D22-D23: material ampliado (todas las fichas, 1-3 estrellas, 24 meses)
+  months: 24
+  max_pages: 10                # por app y por estrella
+  stars: [1, 2, 3]
+  min_reviews: 10
+  min_apps: 3
+  examples: 3
+  exclude_regulated: true      # fuera impuestos, aduanas, pagos y datos de salud
+  regulated_categories: ["store-management-finances-taxes", "selling-products-payments-pay-later",
+                         "selling-products-payments-payment-experience", "selling-products-payments-payment-options-other"]
+
+close:                         # D24-D26: cierre de la Fase 2
+  single_app_share: 0.5        # D24: una app con >= 50 % de las reseñas -> "problema de una app"
+  leaders_per_category: 3      # D25
+
+weights:                       # paso 8; los 7 originales escalados ×0,7 para dejar sitio a volume y competition
+  demand: 0.105
+  pain: 0.07
+  recent_pain: 0.105
+  momentum: 0.07
+  recurrence: 0.14
+  buildability: 0.14
+  neglect: 0.07
+  volume: 0.15
+  competition: 0.15
